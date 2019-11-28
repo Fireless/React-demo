@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import './App.css';
 import {Button} from 'antd'
 import 'antd/dist/antd.css'
 
-function App() {
-  return (
-    <div className="App">
-      <Button>antd</Button>
-    </div>
-  );
+class App extends Component{
+  render() {
+    return(
+      <div>
+        {this.props.children}
+      </div>
+    ) 
+  }
 }
 
 export default App;

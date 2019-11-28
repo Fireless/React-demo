@@ -27,7 +27,17 @@ const menuList =[
             },
             {
                 title:'巡查日志',
-                key:'/admin/log/inspection'
+                key:'/admin/log/inspection',
+                children:[
+                    {
+                        title:'水电巡查',
+                        key:'/admin/log/inspection/water',
+                    },
+                    {
+                        title:'管线巡查',
+                        key:'/admin/log/inspection/pipe',
+                    }
+                ]
             },
             {
                 title:'维修日志',
